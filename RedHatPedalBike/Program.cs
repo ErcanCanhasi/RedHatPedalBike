@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using RedHatPedalBike.Models;
-using RedHatPedalBike.Controllers;
+#using RedHatPedalBike.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
