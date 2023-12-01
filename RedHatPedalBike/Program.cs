@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using RedHatPedalBike.Models;
-#using RedHatPedalBike.Controllers;
+using RedHatPedalBike.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<UsersdbContext>(option => option.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<BikedbContext>(option => option.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
 
